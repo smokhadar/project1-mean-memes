@@ -4,9 +4,12 @@ var imageText = document.querySelector("");
 
 // API URLs
 var APIKey = "OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5";
+var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=" + userInput;
+console.log("hello");
 var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=cake";
 var yeUrl = "https://api.kanye.rest";
 
+// function getApi(){
 // Pulls giphy api data.
 function giphyApi(){
     fetch(giphyUrl)
@@ -15,10 +18,12 @@ function giphyApi(){
     })
     .then(function(data){
         console.log(data);
+
     })
 
 } 
 
+getApi()
 // Pulls kayne quote. 
 function yeApi(){
     fetch(yeUrl)
@@ -33,4 +38,5 @@ function yeApi(){
 //giphyApi()
 //yeApi()
 
+// PULL request :)
 // dcasdfvasdfvasd
