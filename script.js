@@ -5,7 +5,7 @@ console.log("hello");
 function getApi(){
     fetch(giphyUrl)
     .then(function(response){
-        return response.json();
+        return response;
     })
     .then(function(data){
         console.log(data);
@@ -15,3 +15,5 @@ function getApi(){
 } 
 
 getApi()
+
+// PULL request :)
