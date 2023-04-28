@@ -1,0 +1,14 @@
+body{
+    background-color: #e6dfcc;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color:#7acec2
+}
+
+.moodboard{
+    height: 100px;
+    font-size: 400px;
+}
