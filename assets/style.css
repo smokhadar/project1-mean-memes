@@ -1,3 +1,13 @@
+body{
+    background-color: #e6dfcc;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color:#7acec2
+}
+
 /* styling for gif container*/
 
 .projectContent {
@@ -58,3 +68,4 @@
     color: #ADAD98;
     background: #35474d;
 }
+

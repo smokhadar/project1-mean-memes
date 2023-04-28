@@ -13,55 +13,46 @@
    
 
 <header class="header">
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
+  <div class="top-bar" style="background-color: #f58b57;">
+    <div class="top-bar-left"style="background-color: #f58b57;">
+      <ul class="menu"style="background-color: #f58b57;">
         <li class="menu-text" style="font-size: 32px ;">TOXIC MEME GENERATOR</li>
       </ul>
     </div>
-    <div class="top-bar-right" style="list-style-type: none;">
-        <li><a href="#">FAVORITES</a></li>
-        <li><a href="#">RECENTS</a></li>
+    <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
+        <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
+        <li><a href="#" style="font-weight: bold;">FAVORITES</a></li>
+        <li><a href="#" style="font-weight: bold;">RECENTS</a></li>
       </ul>
     </div>
   </div>
 </header>
 
-
-
     <!--drop down and Recipient name input-->
-
-    <div class="grid-x grid-padding-x">
-        <div class="large-4 medium-4 cell">
-          <label>Name</label>
-          <input type="text" placeholder="large-4.cell" />
-        </div>
-
-
-        <form>
-        <ul>
-          <li>
-            <label for="moods">Choose a mood for your meme:</label>
+    <div class="card medium-6 cell " style="float: left; width: 300px; height: 500px; padding-left: 50px; padding-top: 50px; background-color: #e6dfcc">
+        <div class="grid-x">
+        <form >
+            <label style="font-size: 30px; line-height: 20px; padding-bottom: 20px;" for="moods">Choose a mood for your meme:</label>
             <select id="moods-giphy">
               <option value="happy">Happy Kanye</option>
               <option value="sad">Sad Kanye</option>
               <option value="angry">Angry Kanye</option>
               <option value="jealous">Jealous Kanye</option>
               <option value="racist">Racist Kanye</option>
-            
             </select>
-          </li>
-
+        </form>
+    </div>
+    </div>
 
 
 <!--container where meme will be generated-->
-<section class="projectBox">
-  <section class="projectContent">
-          <h3></h3>
-          <p></p>
-          <button>Favorite</button>
+<section class="projectBox" style="float: right;">
+    <section id="projectContent">
+            <h3></h3>
+            <p></p>
+            <button>Favortite</button>
+    </section>
   </section>
-</section>
 
 
     <script src="assets/jquery.js"></script>
