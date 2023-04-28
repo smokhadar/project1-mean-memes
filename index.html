@@ -10,35 +10,51 @@
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
-    <header class="header">
-      <h1>MeanMemes</h1>
-      <nav>
-          <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-          </ul>
-      </nav>
-  </header>
-    <!--drop down and Recipient name input-->
-  <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
-<div class="dropdown-pane" id="userMood" data-dropdown data-auto-focus="true">
-  Example form in a dropdown.
-  <form>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell medium-6">
-          
-        </div>
-        <div id="recipientName" class="cell medium-6">
-          <label>Recipient Name
-            <input type="text" placeholder="Recipient Name ">
-          </label>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
+   
 
+<header class="header">
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text" style="font-size: 32px ;">TOXIC MEME GENERATOR</li>
+      </ul>
+    </div>
+    <div class="top-bar-right" style="list-style-type: none;">
+        <li><a href="#">FAVORITES</a></li>
+        <li><a href="#">RECENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+    <!--drop down and Recipient name input-->
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 cell">
+          <label>Name</label>
+          <input type="text" placeholder="large-4.cell" />
+        </div>
+
+
+        <form>
+        <ul>
+          <li>
+            <label for="moods">Choose a mood for your meme:</label>
+            <select id="moods-giphy">
+              <option value="happy">Happy Kanye</option>
+              <option value="sad">Sad Kanye</option>
+              <option value="angry">Angry Kanye</option>
+              <option value="jealous">Jealous Kanye</option>
+              <option value="racist">Racist Kanye</option>
+            
+            </select>
+          </li>
+
+
+
+<!--container where meme will be generated-->
 <div id="projectContent" >
   <h2></h2>
       <img id="giphy" src="" alt="">
@@ -48,9 +64,9 @@
 </div>
 
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/what-input.js"></script>
+    <script src="assets/foundation.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
