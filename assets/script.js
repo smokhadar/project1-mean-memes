@@ -1,23 +1,36 @@
 // elements to render generated content in
-var imageBox = document.querySelector(".projectContent").children[0].children[0];
-var imageText = document.querySelector(".projectContent").children[1];
+var imageBox = document.querySelector("#projectContent").children[0].children[0];
+var imageText = document.querySelector("#projectContent").children[1];
 
 // variables for user input
 var recipientName = document.getElementById('recipientName'); 
-var userMood = document.getElementById('userMood');
+
+var userMood = document.getElementById('moods-giphy');
+var moodIndex = userMood.selectedIndex;
+var moodOptions = userMood.options;
+console.log(moodOptions[1].value);
+console.log(moodIndex);
+
+for (moodIndex; moodIndex < 4; moodIndex++) {
+    [moodIndex]
+}
+
+// var selectedMood = userMood.options[moodIndex];
+alert("Index: " + moodIndex + " is " + moodOptions[moodIndex].value);
+
+// console.log("moodIndex", moodIndex);
+// console.log("moodIndex", moodOptions.value);
+
 
 // event listener for saveBtn
 var saveBtn = document.getElementById('saveBtn');
 
-saveBtn.addEventListener('click', function() {
+saveBtn.addEventListener('click', function(event) {
+    var userMood = 
+    console.log(userMood);
     giphyApi();
     yeApi();
 });
-
-
-const moods = {
-    happy: userMood,
-}
 
 
 // API URLs
