@@ -1,15 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <!--add links-->
-</head>
-<body>
-    <img>
-    <script src="./script.js"></script>
-</body>
+    <title>MeanMemes</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/foundation.css">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+   
+
+<header class="header">
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text" style="font-size: 32px ;">TOXIC MEME GENERATOR</li>
+      </ul>
+    </div>
+    <div class="top-bar-right" style="list-style-type: none;">
+        <li><a href="#">FAVORITES</a></li>
+        <li><a href="#">RECENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+    <!--drop down and Recipient name input-->
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 cell">
+          <label>Name</label>
+          <input type="text" placeholder="large-4.cell" />
+        </div>
+
+
+        <form>
+        <ul>
+          <li>
+            <label for="moods">Choose a mood for your meme:</label>
+            <select id="moods-giphy">
+              <option value="happy">Happy Kanye</option>
+              <option value="sad">Sad Kanye</option>
+              <option value="angry">Angry Kanye</option>
+              <option value="jealous">Jealous Kanye</option>
+              <option value="racist">Racist Kanye</option>
+            
+            </select>
+          </li>
+
+
+
+<!--container where meme will be generated-->
+<div id="projectContent" >
+  <h2></h2>
+      <img id="giphy" src="" alt="">
+  <p></p>
+</div>
+  <button id="saveBtn" ></button>
+</div>
+
+
+    <script src="assets/jquery.js"></script>
+    <script src="assets/what-input.js"></script>
+    <script src="assets/foundation.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
