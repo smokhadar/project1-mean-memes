@@ -10,7 +10,7 @@ a:hover{
 
 /* styling for gif container*/
 
-.projectContent {
+#projectContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,18 +26,19 @@ a:hover{
     cursor: pointer;
 }
 
-.projectContent h2 {
+#projectContent h2 {
     padding:50px 0 0 10px;
     font-size: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;   
 }
-.projectContent p {
+#projectContent p {
     font-family: Arial, Helvetica, sans-serif;
     color: #ADAD98;
 }
 
 .projectBox {
+    margin: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,6 +55,8 @@ a:hover{
 }
 
 .projectBox button {
+    position: absolute;
+    bottom: 0;
     height: 30px;
     width: 100px;
     background: transparent;
@@ -62,11 +65,23 @@ a:hover{
     border-radius: 5px;
     transition: 0.5;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .projectBox button:hover {
-    color: #ADAD98;
-    background: #35474d;
+    color: black;
+    background: #f58b57;
+}
+
+.genButt button {
+    height: 30px;
+    width: 100px;
+    background: transparent;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5;
+    cursor: pointer;
 }
 
 .custom-select {
@@ -126,3 +141,8 @@ a:hover{
   
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);}
+
+.projectBox button:hover {
+    color: black;
+    background: #f58b57;
+}
