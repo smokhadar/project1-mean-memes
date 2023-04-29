@@ -1,44 +1,42 @@
 // pulls off of id tags in index.html.
-// var imageBox = document.querySelector(".projectContent").children[0].children[0];
-// var imageText = document.querySelector(".projectContent").children[1];
-// var recipientName;
-// var userMood; 
-
-function selectMood(){
-    document.addEventListener("click", function(event){
-    var select = document.querySelector("#moods-giphy");
-    var selectedindex = event.target;
-    var selectedValue = select.getAttribute();
-    console.log(selectedValue);
-    })
-}
-
-selectMood()
+var imageBox = document.querySelector(".projectContent").children[0].children[0];
+var imageText = document.querySelector(".projectContent").children[1];
+var recipientName;
+var userMood; 
 
 
 // API URLs
 var APIKey = "OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5";
-var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=";
+var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=" + userInput;
 console.log("hello");
 var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=cake";
 var yeUrl = "https://api.kanye.rest";
 
+
+var lastSavedGif;
+var lastSavedQuote;
+
 // function getApi(){
 // Pulls giphy api data.
-function giphyApi(){
+function giphyApi(giphyUrl){
     fetch(giphyUrl)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
         console.log(data);
+        
 
+
+        lastSavedGif = JSON.parse(localStorage.getItem("lastSavedGif")) || [];
+        lastSavedGif.push({})
     })
 
 } 
 
+getApi()
 // Pulls kayne quote. 
-function yeApi(){
+function yeApi(yeUrl){
     fetch(yeUrl)
     .then(function(response){
         return response.json();
