@@ -1,13 +1,24 @@
 // pulls off of id tags in index.html.
-var imageBox = document.querySelector(".projectContent").children[0].children[0];
-var imageText = document.querySelector(".projectContent").children[1];
-var recipientName;
-var userMood; 
+// var imageBox = document.querySelector(".projectContent").children[0].children[0];
+// var imageText = document.querySelector(".projectContent").children[1];
+// var recipientName;
+// var userMood; 
+
+function selectMood(){
+    document.addEventListener("click", function(event){
+    var select = document.querySelector("#moods-giphy");
+    var selectedindex = event.target;
+    var selectedValue = select.getAttribute();
+    console.log(selectedValue);
+    })
+}
+
+selectMood()
 
 
 // API URLs
 var APIKey = "OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5";
-var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=" + userInput;
+var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=";
 console.log("hello");
 var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=cake";
 var yeUrl = "https://api.kanye.rest";
@@ -26,7 +37,6 @@ function giphyApi(){
 
 } 
 
-getApi()
 // Pulls kayne quote. 
 function yeApi(){
     fetch(yeUrl)
