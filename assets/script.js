@@ -1,32 +1,34 @@
 // elements to render generated content in
+// update var below
 var imageBox = document.querySelector("#projectContent").children[0].children[0];
 var imageText = document.querySelector("#projectContent").children[1];
 
-// variables for user input
-var recipientName = document.getElementById('recipientName'); 
-
+// variables for user input 
 var userMood = document.getElementById('moods-giphy');
 var moodIndex = userMood.selectedIndex;
 var moodOptions = userMood.options;
-console.log(moodOptions[1].value);
-console.log(moodIndex);
+// console.log(moodOptions[1].value);
+// console.log(moodIndex);
 
 for (moodIndex; moodIndex < 4; moodIndex++) {
     [moodIndex]
 }
 
 // var selectedMood = userMood.options[moodIndex];
-alert("Index: " + moodIndex + " is " + moodOptions[moodIndex].value);
+// alert("Index: " + moodIndex + " is " + moodOptions[moodIndex].value);
 
 // console.log("moodIndex", moodIndex);
 // console.log("moodIndex", moodOptions.value);
-
 
 // event listener for saveBtn
 var saveBtn = document.getElementById('saveBtn');
 
 saveBtn.addEventListener('click', function(event) {
+    console.log(event.target);
     var userMood = 
+    
+    // if else or for loop to generate API based on selected mood
+
     console.log(userMood);
     giphyApi();
     yeApi();
@@ -53,24 +55,28 @@ function giphyApi(giphyUrl){
     })
     .then(function(data){
         console.log(data);
-        
-
-
+        // whats happening here?
         lastSavedGif = JSON.parse(localStorage.getItem("lastSavedGif")) || [];
         lastSavedGif.push({})
     })
 
 } 
 
+var textdatabase
+
 
 // Pulls kayne quote. 
-function yeApi(yeUrl){
+function yeApi(){
     fetch(yeUrl)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
-        console.log(data);
+        imageText.textContent = data.quote;
+        textdatabase = JSON.parse(localStorage.getItem("text")) || [];
+        textdatabase.push({text: data.quote});
+        localStorage.setItem("text", JSON.stringify(textdatabase));
+        console.log(textdatabase);
     })
 }
 
@@ -85,3 +91,5 @@ function yeApi(yeUrl){
 // grab user choice of "favoriting" generated content
 // save to local storage
 // render in favorites html
+
+yeApi();
