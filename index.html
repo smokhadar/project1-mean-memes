@@ -33,33 +33,32 @@
     <div class="card medium-6 cell " style="float: left; width: 300px; height: 500px; padding-left: 50px; padding-top: 50px; background-color: #e6dfcc">
         <div class="grid-x">
         <label style="font-size: 30px; line-height: 30px; padding-bottom: 20px;font-weight: bold;" for="moods">CHOOSE A MOOD FOR YOUR MEME:</label>
-        <form style="width: 500px;">
-            <select style="font-size: 30px;font-weight: 500;" id="moods-giphy">
-              <option value="happy">Happy Kanye</option>
+        <form id="search-form" style="width: 500px;">
+            <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+            <!-- <select style="font-size: 30px;font-weight: 500;" id="moods-giphy"> -->
+              <!-- <option value="happy">Happy Kanye</option>
               <option value="sad">Sad Kanye</option>
               <option value="angry">Angry Kanye</option>
               <option value="jealous">Jealous Kanye</option>
-              <option value="racist">Racist Kanye</option>
-            </select>
-            <div class="genButt">
+              <option value="racist">Racist Kanye</option> -->
+            <!-- </select> -->
+            <!-- <div id="genBtn">
               <h3></h3>
-              <p></p>
-              <button id="saveBtn">Generate</button>
-            </div>
+              <p></p> -->
+              <button id="genBtn">Generate</button>
+            <!-- </div> -->
         </form>
 
     </div>
     </div>
 
 <!--container where meme will be generated-->
-<div class="projectBox" style="float: right;">
-    <div id="projectContent">
-            <h3></h3>
-            <p></p>
-            <img src=""/>
-            <button>ADD TO FAVORITE</button>
-    </section>
-  </section>
+<div id="gifAndQuote" style="float: right;">
+  <h3></h3>
+  <p></p>
+  <img src=""/>
+   <button>ADD TO FAVORITE</button>
+</div>
 
             <button>Favorite</button>
     </div>
@@ -69,6 +68,7 @@
     <script src="assets/jquery.js"></script>
     <script src="assets/what-input.js"></script>
     <script src="assets/foundation.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
