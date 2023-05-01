@@ -1,4 +1,4 @@
-var searchFormEl = document.querySelector("search-form");
+var searchFormEl = document.querySelector("#search-form");
 
 function handleSearchSubmit(event) {
     event.preventDefault();
@@ -15,5 +15,14 @@ function handleSearchSubmit(event) {
     location.assign(queryString);
 }
 
-// why isnt this working?
 searchFormEl.addEventListener('submit', handleSearchSubmit);
+
+var favsButton = document.querySelector("#favBtn")
+
+function goToFavorites() {
+    var favoritesString = "./favorites.html"
+    location.assign(favoritesString);
+}
+
+favsButton.addEventListener('click', goToFavorites);
+

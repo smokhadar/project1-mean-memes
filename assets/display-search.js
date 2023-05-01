@@ -1,16 +1,36 @@
+// get search params out of html search results page URL
 function getParams() {
-    // get search params out of html search results page URL and convert into array
     var searchParamsArr = document.location.search.split('&');
     var query = searchParamsArr[0].split('=').pop();
+    console.log("query", query);
     searchGifApi(query);
 }
 
-var yeGif = document.querySelector("#gifAndQuote").children[Image]
+var resultGifEl = document.querySelector('#result-content');
+
+// displays gifs on page
+function printResults(resultObj) {
+    console.log(resultObj);
+  
+    var resultCard = document.createElement('div');
+    resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
+  
+    var resultBody = document.createElement('div');
+    resultBody.classList.add('card-body');
+    resultCard.append(resultBody);
+  
+    var gifEl = document.createElement('img');
+    gifEl.src = resultObj.url;
+  
+    resultBody.append(gifEl);
+    resultGifEl.append(resultCard);
+  }
 
 function searchGifApi(query) {
     var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye&q=kanye-west"
 
     gifQueryUrl = gifQueryUrl + '&q=' + query;
+    console.log("gifQueryUrl", gifQueryUrl);
 
     fetch(gifQueryUrl)
         .then(function (response) {
@@ -21,25 +41,22 @@ function searchGifApi(query) {
             return response.json();
         })
         .then(function (gifs) {
-            // write query to page so user sees
-            // yeGif.textContent = gifs.search.query;
+            var resultText = document.querySelector("#result-text");
+            resultText.textContent = query;
             
             console.log(gifs);
             var gifDatabase;
 
-            if (!gifs.results.length) {
+            if (!gifs) {
                 console.log('No results found!');
             } else {
-                // make image src empty
-                // yeGif.textContent = '';
-                for (var i = 0; i < gifs.results.length; i++) {
-                    printResults(gifs.results[i]);
+                for (var i = 0; i < gifs.count; i++) {
+                    printResults(gifs[i]);
                 }
-                // yeGif.textContent = gifs.[''];
                 gifDatabase = JSON.parse(localStorage.getItem("gif")) || [];
-                // gifDatabase.push({text: data.quote});
+                gifDatabase.push({gif: gifs[i].url});
                 localStorage.setItem("gif", JSON.stringify(gifDatabase));
-                console.log(gifDatabase);
+                console.log("gifDatabase", gifDatabase);
             }
         })
         .catch(function (error) {
@@ -69,7 +86,7 @@ function yeQuoteApi(){
 yeQuoteApi();
 
 // handle search form
-var searchFormEl = document.querySelector("search-form");
+var searchFormEl = document.querySelector("#search-form");
 
 function handleSearchSubmit(event) {
     event.preventDefault();
@@ -80,10 +97,12 @@ function handleSearchSubmit(event) {
         console.log(console.error);
         return;
     }
-
     var queryString = './search-results.html?q=' + searchInputVal;
-
     location.assign(queryString);
 }
 
 searchFormEl.addEventListener('submit', handleSearchSubmit);
+
+getParams();
+
+// function handleAddToFavorites()
