@@ -1,30 +1,18 @@
-// elements to render generated content in
-// update var below
-var imageBox = document.querySelector("#projectContent").children[0].children[0];
-var imageText = document.querySelector("#projectContent").children[1];
+var searchFormEl = document.querySelector("#search-form");
 
+function handleSearchSubmit(event) {
+    event.preventDefault();
+    var searchInputVal = document.querySelector ('#search-input').value;
 
-// variables for user input 
-var userMood = document.getElementById('moods-giphy');
-var moodIndex = userMood.selectedIndex;
-var moodOptions = userMood.options;
-// console.log(moodOptions[1].value);
-// console.log(moodIndex);
+    if (!searchInputVal) {
+        console.error('You need a search input value!');
+        console.log(console.error);
+        return;
+    }
 
-for (moodIndex; moodIndex < 4; moodIndex++) {
-   [moodIndex]
-}
+    var queryString = './search-results.html?q=' + searchInputVal;
 
-
-// var selectedMood = userMood.options[moodIndex];
-// alert("Index: " + moodIndex + " is " + moodOptions[moodIndex].value);
-
-
-// console.log("moodIndex", moodIndex);
-// console.log("moodIndex", moodOptions.value);
-
-for (moodIndex; moodIndex < 4; moodIndex++) {
-    [moodIndex]
+    location.assign(queryString);
 }
 
 // var selectedMood = userMood.options[moodIndex];
@@ -88,7 +76,7 @@ function giphyApi(giphyUrl){
         lastSavedGif.push({})
     })
 
-
+} 
 
 var textdatabase
 
@@ -107,7 +95,7 @@ function yeApi(){
        localStorage.setItem("text", JSON.stringify(textdatabase));
        console.log(textdatabase);
    })
-}
+
 
 // add event listeners to submit button, favorites click, most recent click
 // grab the user input from form for name
