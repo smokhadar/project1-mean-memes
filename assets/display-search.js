@@ -29,9 +29,9 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,"
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q="
 
-    gifQueryUrl = gifQueryUrl + '&q=' + query;
+    gifQueryUrl = gifQueryUrl + query;
     console.log("gifQueryUrl", gifQueryUrl);
 
     fetch(gifQueryUrl)
@@ -80,7 +80,7 @@ function yeQuoteApi(){
        return response.json();
    })
    .then(function(data){
-       yeQuote.textContent = data.quote;
+       yeQuote.textContent = '"' + data.quote + '."';
        textdatabase = JSON.parse(localStorage.getItem("text")) || [];
        textdatabase.push({text: data.quote});
        localStorage.setItem("text", JSON.stringify(textdatabase));
