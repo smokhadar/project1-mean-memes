@@ -12,8 +12,8 @@ function handleSearchSubmit(event) {
     var queryString = './search-results.html?q=' + searchInputVal;
     location.assign(queryString);
 }
-
 searchFormEl.addEventListener('submit', handleSearchSubmit);
 
+// i hate this
 // render recents from local storage on recents page
 // render favorites from local storage on favorites HTML page
