@@ -20,7 +20,10 @@ function printResults(resultObj) {
   
     var gifEl = document.createElement('img');
     gifEl.classList.add('generatedGif')
-    gifEl.setAttribute('src', resultObj.embed_url);
+    gifEl.setAttribute('src', resultObj.images.downsized.url);
+    console.log( "url", resultObj.images.downsized.url);
+    gifEl.setAttribute('height', "100px");
+    gifEl.setAttribute('width', "100px");
     // gifEl.src = resultObj.url;
   
     resultBody.append(gifEl);
@@ -29,9 +32,9 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye&q=kanye-west"
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,kanyewest"
 
-    gifQueryUrl = gifQueryUrl + '&q=' + query;
+    gifQueryUrl = gifQueryUrl + query;
     console.log("gifQueryUrl", gifQueryUrl);
 
     fetch(gifQueryUrl)
