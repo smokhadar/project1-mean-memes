@@ -17,12 +17,5 @@ function handleSearchSubmit(event) {
 
 searchFormEl.addEventListener('submit', handleSearchSubmit);
 
-var favsButton = document.querySelector("#favBtn")
-
-function goToFavorites() {
-    var favoritesString = "./favorites.html"
-    location.assign(favoritesString);
-}
-
-favsButton.addEventListener('click', goToFavorites);
-
+// render recents from local storage on recents page
+// render favorites from local storage on favorites HTML page

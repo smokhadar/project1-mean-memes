@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title> Kanye Moods</title>
+    <link rel="resetsheet" href="./assets/reset.css">
+    <link rel="foundationsheet" href="./assets/foundation.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+ 
+<body>
+
+    <header class="header">
+        <div class="top-bar" style="background-color: #f58b57;">
+          <div class="top-bar-left"style="background-color: #f58b57;">
+            <ul class="menu"style="background-color: #f58b57;">
+              <li class="menu-text" style="font-size: 40px ;">TOXIC KANYE GENERATOR</li>
+            </ul>
+          </div>
+          <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
+              <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
+              <li id="home"><a href="index.html" style="font-weight: bold;">HOME</a></li>
+              <li id="favBtn"><a href="favorites.html" style="font-weight: bold;">FAVORITES</a></li>
+              <li id="recentsBtn"><a href="recents.html" style="font-weight: bold;">RECENTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <script type="text/javascript">
+        window.addEventListener("load",()=>{
+            const name = document.querySelector("#name");
+            const username = localStorage.getItem("username") || ""; 
+            name.value = username;
+
+            name.addEventListener("change", (e) => {
+                localStorage.setItem("username", e.target.value);
+            })
+        })
+    </script>
+
+    <script src="./assets/script.js"></script>
+    <script src="./assets/display-search.js"></script>
+</body>
+
+
+
+</html>
