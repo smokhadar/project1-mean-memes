@@ -29,7 +29,7 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q="
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,"
 
     gifQueryUrl = gifQueryUrl + query;
     console.log("gifQueryUrl", gifQueryUrl);
