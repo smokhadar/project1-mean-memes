@@ -132,7 +132,7 @@ function loadFavorites(){
         favoritesBody.textContent = favoriteQuotes[i];
         favoritesTable.append(resultBody);
 
-        
+        printResults(favoriteGifs[i]);
     }
 }
 
