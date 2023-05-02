@@ -88,7 +88,7 @@ function giphyApi(giphyUrl){
         lastSavedGif.push({})
     })
 
-} 
+
 
 var textdatabase
 
@@ -107,7 +107,7 @@ function yeApi(){
        localStorage.setItem("text", JSON.stringify(textdatabase));
        console.log(textdatabase);
    })
-
+}
 
 // add event listeners to submit button, favorites click, most recent click
 // grab the user input from form for name
