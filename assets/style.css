@@ -1,3 +1,4 @@
+
 body{
     background-color: #e6dfcc;
 }
@@ -8,7 +9,10 @@ a:hover{
     color:#7acec2
 }
 
+
 /* styling for gif container*/
+
+
 
 
 #projectContent {
@@ -29,22 +33,27 @@ a:hover{
 }
 
 
+
+
 #dropdownbox{
  
  text-align: center;
  
   border: 3px solid #412517;  
   border-radius: 15px;
-  float: left; 
-  width: 700px; 
-  height: 500px; 
-  padding-left: 30px; 
-  padding-top: 80px; 
+  float: left;
+  width: 700px;
+  height: 500px;
+  padding-left: 30px;
+  padding-top: 80px;
   padding-right: 30px;
-  background-color: #a75f3b; 
-  margin-top: 80px; 
+  background-color: #a75f3b;
+  margin-top: 80px;
   margin-left: 80px;
  }
+
+
+
 
 
 
@@ -52,12 +61,13 @@ a:hover{
     padding:50px 0 0 10px;
     font-size: 25px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;  
 }
 #projectContent p {
     font-family: Arial, Helvetica, sans-serif;
     color: #0e0e0d;
 }
+
 
 .projectBox {
     margin: 100px;
@@ -66,16 +76,18 @@ a:hover{
     gap: 90px;
     justify-content: center;
     width: 750px;
-    
+   
     color: #ADAD98;
 }
+
 
 .projectBox p {
     text-align: center;
     width: 80%;
-    
+   
     font-size: 30px;
 }
+
 
 .projectBox button {
 padding-bottom: 0%;
@@ -86,17 +98,19 @@ padding-bottom: 0%;
     border: 2px solid black;
     font-weight: bold;
     border-radius: 5px;
-    
+   
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 30px;
    
 }
 
+
 .projectBox button:hover {
     color: black;
     background: #7acec2;
 }
+
 
 .genButt button {
   height: 100px;
@@ -111,6 +125,8 @@ padding-bottom: 0%;
    text-align: center;
    font-weight: bold;
 }
+
+
 
 
 .genButt button:hover{
