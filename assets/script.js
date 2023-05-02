@@ -11,6 +11,10 @@ function handleSearchSubmit(event) {
     }
 
     var queryString = './search-results.html?q=' + searchInputVal;
+var recipientName = document.getElementById('recipientName');
+var userMood = document.getElementById('moods-giphy');
+var moodIndex = userMood.selectedIndex;
+var moodOptions = userMood.options;
 
     location.assign(queryString);
 }
