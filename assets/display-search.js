@@ -19,9 +19,9 @@ function printResults(resultObj) {
     resultCard.append(resultBody);
   
     var gifEl = document.createElement('img');
-    gifEl.classList.add('generatedGif')
-    gifEl.setAttribute('src', resultObj.embed_url);
-    // gifEl.src = resultObj.url;
+    gifEl.classList.add('generatedGif');
+    gifEl.setAttribute('src', resultObj.images.downsized.url);
+    console.log( "url", resultObj.images.downsized.url);
   
     resultBody.append(gifEl);
     resultGifEl.append(resultCard);
@@ -29,7 +29,7 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye&q=kanye-west"
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,"
 
     gifQueryUrl = gifQueryUrl + '&q=' + query;
     console.log("gifQueryUrl", gifQueryUrl);
