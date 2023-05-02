@@ -77,6 +77,7 @@ function giphyApi(giphyUrl){
 
 
 }
+{
     fetch(giphyUrl)
     .then(function(response){
         return response.json();
@@ -108,7 +109,7 @@ function yeApi(){
        console.log(textdatabase);
    })
 
-
+}
 // add event listeners to submit button, favorites click, most recent click
 // grab the user input from form for name
 // grab user choice from dropdown

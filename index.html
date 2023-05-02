@@ -12,57 +12,56 @@
   <body>
    
 
-<header class="header">
-  <div class="top-bar" style="background-color: #f58b57;">
-    <div class="top-bar-left"style="background-color: #f58b57;">
-      <ul class="menu"style="background-color: #f58b57;">
-        <li class="menu-text" style="font-size: 40px ;">TOXIC MEME GENERATOR</li>
-      </ul>
-    </div>
-    <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
-        <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
-        <li><a href="#" style="font-weight: bold;">FAVORITES</a></li>
-        <li><a href="#" style="font-weight: bold;">RECENTS</a></li>
-      </ul>
+    <header class="header">
+      <div class="top-bar" style="background-color: #f58b57;">
+        <div class="top-bar-left" style="background-color: #f58b57;">
+          <ul class="menu" style="background-color: #f58b57;">
+            <li class="menu-text" style="font-size: 40px;">TOXIC MEME GENERATOR</li>
+          </ul>
+        </div>
+        <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
+          <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
+            <li><a href="#" style="font-weight: bold;">FAVORITES</a></li>
+            <li><a href="#" style="font-weight: bold;">RECENTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+<div class="grid-x">
+ <div class="card medium-6 cell" style="float: left; width: 400px; height: 500px; padding-left: 50px; padding-top: 40px; border-color:#a75f3b; background-color: #a75f3b; margin-top: 80px; margin-left: 80px;">
+  <div>
+    <p>Select a mood from the drop down to generate a Kanye Gif and quote.</p>
+  </div>
+  <div class="card medium-6 cell" style="float: left; width: 300px; height: 500px; padding-left: 50px; padding-top: 50px; background-color: #e6dfcc;">
+    <div class="grid-x">
+      <label style="font-size: 30px; line-height: 30px; padding-bottom: 20px; font-weight: bold;" for="moods">CHOOSE A MOOD FOR YOUR MEME:</label>
+      <form style="width: 500px;">
+        <select style="font-size: 30px; font-weight: 500;" id="moods-giphy">
+          <option value="happy">Happy Kanye</option>
+          <option value="sad">Sad Kanye</option>
+          <option value="angry">Angry Kanye</option>
+          <option value="jealous">Jealous Kanye</option>
+          <option value="racist">Racist Kanye</option>
+        </select>
+        <div class="genButt">
+          <h3></h3>
+          <p></p>
+          <button id="saveBtn">Generate</button>
+        </div>
+      </form>
     </div>
   </div>
-</header>
 
-    <div class="card medium-6 cell " style="float: left; width: 650px; height: 500px; padding-left: 50px; padding-top: 50px; border-color:#a75f3b; background-color: #a75f3b; margin-top: 80px; margin-left: 80px;">
-    <div><p>Select a mood from the drop down to generate a Kanye Gif and qoute.</p></div>
-    <div class="card medium-6 cell " style="float: left; width: 300px; height: 500px; padding-left: 50px; padding-top: 50px; background-color: #e6dfcc">
-        <div class="grid-x">
-        <label style="font-size: 30px; line-height: 30px; padding-bottom: 20px;font-weight: bold;" for="moods">CHOOSE A MOOD FOR YOUR MEME:</label>
-        <form style="width: 500px;">
-            <select style="font-size: 30px;font-weight: 500;" id="moods-giphy">
-              <option value="happy">Happy Kanye</option>
-              <option value="sad">Sad Kanye</option>
-              <option value="angry">Angry Kanye</option>
-              <option value="jealous">Jealous Kanye</option>
-              <option value="racist">Racist Kanye</option>
-            </select>
-            <div class="genButt">
-              <h3></h3>
-              <p></p>
-              <button id="saveBtn">Generate</button>
-            </div>
-        </form>
-
-    </div>
-    </div>
-
-<!--container where meme will be generated-->
-<div class="projectBox" style="float: right;">
-    <div id="projectContent">
-            <h3></h3>
+  <!--container where meme will be generated-->
+  <div class="projectBox grid-x">
+    <div id="projectContent" class="cell small-12 medium-6 float-right">
+      <h3></h3>
             <p></p>
             <img src=""/>
-            <button>ADD TO FAVORITE</button>
-    </section>
-  </section>
-
-            <button>Favorite</button>
+            <button class="favButt" >Favorite</button>
     </div>
+  </div>
   </div>
 
 
