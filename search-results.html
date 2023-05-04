@@ -1,13 +1,13 @@
-gi<!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanye Results</title>
-    <link rel="resetsheet" href="./assets/css/reset.css">
-    <link rel="foundationsheet" href="./assets/css/foundation.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -22,34 +22,39 @@ gi<!DOCTYPE html>
               <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
               <li id="home"><a href="index.html" style="font-weight: bold;">HOME</a></li>
               <li id="favBtn"><a href="favorites.html" style="font-weight: bold;">FAVORITES</a></li>
-              <li id="recentsBtn"><a href="recents.html" style="font-weight: bold;">RECENTS</a></li>
             </ul>
           </div>
         </div>
       </header>
 
+      
+<div>
+  <div class="card cell medium-1 large-2 small-1" id="dropdownbox" style="float: left; margin-left: 100px; margin-top: 200px;">	
+    <div class="grid-x">	
+       <p style="font-size: 30px; line-height: 30px; padding-bottom: 20px;font-weight: bold;" >ENTER A KEYWORD TO GENERATE A KANYE GIF AND RANDOM QUOTE:</p>	
+       <form style="width: 500px; padding-left: 70px;" id="search-form">
+              <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">	
+              <div class="genButt" style="text-align: center; padding-top: 50px;">
+              <button id="genBtn">GENERATE</button>	
+              </div>
+        </form>	
+    </div>	
+  </div>	
+</div>
 
-    <div class="card medium-6 cell " style="float: left; width: 650px; height: 500px; padding-left: 50px; padding-top: 50px; border-color:#a75f3b; background-color: #a75f3b; margin-top: 80px; margin-left: 80px;">
-        <div><p>Enter a keyword to generate a Kanye Gif and random quote.</p></div>
-        <div class="card medium-6 cell " style="float: left; width: 300px; height: 500px; padding-left: 50px; padding-top: 50px; background-color: #e6dfcc">
-            <div class="grid-x">
-            <form id="search-form" style="width: 500px;">
-                <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
-              <button id="genBtn">Generate</button>
-            </form>
-        </div>
-     </div>
-
-    <!--container where GIF and quote will be generated-->
-    <div id="gifAndQuote" style="float: right;">
-        <h3>Showing random Kanye quote:</h3>
-        <p id="generatedQuote"></p>
-        <h3>Showing Kanye gif results for <span id="result-text"></span></h3>
-        <div id="result-content"></div>
-        <!-- hide button until content generated -->
-        <button id="addFav">ADD TO FAVORITES</button>
-    </div>
+   <div id="projectContent" class="card medium-1 large-2 small-1 cell" style="float: right; margin-right: 100px;"> 
   
+    <div id="gifAndQuote" style= "text-align: center; align-content: center; font-weight: bold; font-size: 30px;">
+        <P>RANDOM KANYE QUOTE:</P>
+        <p style="font-size: 25px; line-height: 30px;" id="generatedQuote"></p>
+        <P>GIF RESULTS FOR: <span id="result-text"></span></P>
+        <p style="display: block; width: 350px; margin: auto; " id="result-content"></p>
+      <div style="text-align: center; margin-top: 35px;">
+  
+        <button id="addFav">ADD TO FAVORITES</button>
+      </div>
+    </div>
+  </div>
     <script src="./assets/JS/display-search.js"></script>
 </body>
 </html>
