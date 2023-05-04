@@ -24,7 +24,6 @@ function printResults(resultObj) {
     // console.log( "url", resultObj.images.downsized.url);
     gifEl.setAttribute('height', "100px");
     gifEl.setAttribute('width', "100px");
-    // gifEl.src = resultObj.url;
   
     resultBody.append(gifEl);
     resultGifEl.append(resultCard);
@@ -33,6 +32,8 @@ function printResults(resultObj) {
 //   search gif API
 function searchGifApi(query) {
     var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye&q=kanye-west"
+
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,
 
     gifQueryUrl = gifQueryUrl + '&q=' + query;
     // console.log("gifQueryUrl", gifQueryUrl);
@@ -83,7 +84,7 @@ function yeQuoteApi(){
        return response.json();
    })
    .then(function(data){
-       yeQuote.textContent = data.quote;
+       yeQuote.textContent = '"' + data.quote + '."';
        textdatabase = JSON.parse(localStorage.getItem("text")) || [];
        textdatabase.push({text: data.quote});
        localStorage.setItem("text", JSON.stringify(textdatabase));
@@ -134,6 +135,23 @@ function handleAddToFavorites(quote, gif) {
     console.log(JSON.parse(localStorage.getItem("faveQuotes")));
     console.log(JSON.parse(localStorage.getItem("faveGifs")));
 };
+
+function loadFavorites(){
+    var favoriteQuotes = JSON.parse(localStorage.getItem("favQuotes"));
+    var favoriteGifs = JSON.parse(localStorage.getItem("favGifs"));
+
+    var favoritesTable = document.createElement("div");
+    favoriteTable.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
+
+    for (var i = 0; i < favoriteQuotes.length; i++) {
+        var favoritesBody = document.createElement('div');
+        resultBody.classList.add('card-body');
+        favoritesBody.textContent = favoriteQuotes[i];
+        favoritesTable.append(resultBody);
+
+        printResults(favoriteGifs[i]);
+    }
+}
 
 var addFavBtn = document.querySelector("#addFav")
 
