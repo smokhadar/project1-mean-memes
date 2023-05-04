@@ -120,6 +120,21 @@ function handleAddToFavorites(quote, gif) {
     localStorage.setItem("favQuotes", quote);
     var gif = document.querySelector(".generatedGif")
     localStorage.setItem("favGifs", gif);
+
+    var savedQuote = quote.textContent;
+    var savedGif = gif.getAttribute("src");
+
+    var quoteDB = JSON.parse(localStorage.getItem("faveQuotes")) || [];
+    var gifDB = JSON.parse(localStorage.getItem("faveGifs")) || [];
+
+    quoteDB.push({faveQuote: savedQuote});
+    gifDB.push({faveGifs: savedGif});
+
+    localStorage.setItem("faveQuotes", JSON.stringify(quoteDB));
+    localStorage.setItem("faveGifs", JSON.stringify(gifDB));
+
+    console.log(JSON.parse(localStorage.getItem("faveQuotes")));
+    console.log(JSON.parse(localStorage.getItem("faveGifs")));
 };
 
 var addFavBtn = document.querySelector("#addFav")
