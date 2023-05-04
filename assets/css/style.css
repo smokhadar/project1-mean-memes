@@ -19,17 +19,16 @@ a:hover{
     /*display: flex;
     flex-direction: column;
     justify-content: center;*/
-    gap: 30px;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     width: 700px;
     border: 3px solid #412517;
     border-radius: 25px;
     background-color: #a75f3b;
-    transition: 0.5s;
     cursor: pointer;
-    margin-top: 80px;
+    margin: auto;
+  margin-top: 80px;
 }
 
 
@@ -38,18 +37,18 @@ a:hover{
 #dropdownbox{
  
  text-align: center;
- 
+ align-content: center;
   border: 3px solid #412517;  
   border-radius: 15px;
-  float: left;
+
   width: 700px;
   height: 500px;
   padding-left: 30px;
   padding-top: 80px;
   padding-right: 30px;
   background-color: #a75f3b;
+  margin: auto;
   margin-top: 80px;
-  margin-left: 80px;
  }
 
 
@@ -69,16 +68,7 @@ a:hover{
 }
 
 
-.projectBox {
-    margin: 100px;
- 
-    align-items: center;
-    gap: 90px;
-    justify-content: center;
-    width: 750px;
-   
-    color: #ADAD98;
-}
+
 
 
 .projectBox p {
@@ -89,7 +79,7 @@ a:hover{
 }
 
 
-.projectBox button {
+#projectContent button {
 padding-bottom: 0%;
     bottom: 0;
     height: 100px;
@@ -106,7 +96,7 @@ padding-bottom: 0%;
 }
 
 
-.projectBox button:hover {
+#projectContent button:hover {
     color: black;
     background: #7acec2;
 }
