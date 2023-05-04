@@ -24,7 +24,6 @@ function printResults(resultObj) {
     console.log( "url", resultObj.images.downsized.url);
     gifEl.setAttribute('height', "100px");
     gifEl.setAttribute('width', "100px");
-    // gifEl.src = resultObj.url;
   
     resultBody.append(gifEl);
     resultGifEl.append(resultCard);
@@ -32,7 +31,8 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,kanyewest"
+
+    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,"
 
     gifQueryUrl = gifQueryUrl + query;
     console.log("gifQueryUrl", gifQueryUrl);
@@ -83,7 +83,7 @@ function yeQuoteApi(){
        return response.json();
    })
    .then(function(data){
-       yeQuote.textContent = data.quote;
+       yeQuote.textContent = '"' + data.quote + '."';
        textdatabase = JSON.parse(localStorage.getItem("text")) || [];
        textdatabase.push({text: data.quote});
        localStorage.setItem("text", JSON.stringify(textdatabase));
