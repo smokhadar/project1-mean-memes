@@ -45,8 +45,8 @@ function searchGifApi(query) {
             return response.json();
         })
         .then(function (gifs) {
-            var resultText = document.querySelector("#result-text");
-            resultText.textContent = query;
+//             var resultText = document.querySelector("#result-text");
+//             resultText.textContent = query;
             console.log(gifs);
 
             var gifDatabase;
