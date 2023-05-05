@@ -14,7 +14,9 @@ An API based website that will populate gifs based off of your mood. Simply type
 image.png
 
 //Link//
+https://github.com/smokhadar/project1-mean-memes/pull/66
 
+https://smokhadar.github.io/project1-mean-memes/
 
 
 //Group//
