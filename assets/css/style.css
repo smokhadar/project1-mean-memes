@@ -118,6 +118,11 @@ padding-bottom: 0%;
     color: white;
 }
 
+#favoritesTable img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #generatedQuote {
  padding-top: 10px;
  padding-bottom: 20px;
