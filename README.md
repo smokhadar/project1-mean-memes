@@ -10,7 +10,7 @@ Then the Kanye meme genrator is for you! A fun application with gifs generated, 
 An API based website that will populate gifs based off of your mood. Simply type in a emotion in to the search bar and the matching Kanye gif and random quote will display!
 
 ## Screenshot
-<img width="1440" alt="Screenshot 2023-05-04 at 19 18 31" src="https://user-images.githubusercontent.com/127573523/236365296-2378c67f-53c9-4db7-896a-7fff8bfb5b8a.png">
+<img width="1440" alt="Screenshot 2023-05-04 at 20 33 00" src="https://user-images.githubusercontent.com/127573523/236372462-d10f0782-0876-490a-8952-5680c4b1f0aa.png">
 
 ## Link: https://smokhadar.github.io/project1-mean-memes/
 
