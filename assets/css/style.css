@@ -18,7 +18,7 @@ a:hover{
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 30px;
-  background-color: black;
+  background-color: brown;
   color: white;
   margin: 10px 10px 10px 10px;
   margin-right: 10px;
@@ -54,10 +54,11 @@ a:hover{
     width: 600px;
     border: 3px solid #412517;
     border-radius: 25px;
-    background-color: black;
+    background-color: brown;
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #gifAndQuote h2 {
@@ -102,7 +103,7 @@ padding-bottom: 0%;
 }
 
 #favoritesTable {
-    background-color: black;
+    background-color: brown;
     justify-content: center;
     align-items: center;
     width: 600px;
@@ -112,6 +113,7 @@ padding-bottom: 0%;
     margin: auto;
     padding-top: 20px;
 }
+
 #favoritesTable p, img {
     margin: auto;
     color: white;
