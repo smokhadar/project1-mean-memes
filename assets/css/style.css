@@ -116,6 +116,7 @@ padding-bottom: 0%;
 #favoritesTable p, img {
     margin: auto;
     color: white;
+    justify-content: center;
 }
 
 #favoritesTable img {
