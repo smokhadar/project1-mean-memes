@@ -72,7 +72,7 @@ function searchGifApi(query) {
         });
 }
 
-var yeQuote = document.querySelector("#gifAndQuote").children[1];
+var yeQuote = document.querySelector("#gifAndQuote").children[0];
 var yeUrl = "https://api.kanye.rest";
 var textdatabase
 
