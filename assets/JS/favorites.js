@@ -15,7 +15,7 @@ function loadFavorites(){
         var favoritesBody = document.createElement("p");
 
         favoritesBody.classList.add('card-body', 'cell', 'medium-6', 'large-4');
-        favoritesBody.textContent = '"' + favoriteQuotes[i].faveQuote + '." - Kanye West';
+        favoritesBody.textContent = favoriteQuotes[i].faveQuote + ' - Kanye West';
         favoritesTable.appendChild(favoritesBody);
 
         console.log(favoriteQuotes[i]);
