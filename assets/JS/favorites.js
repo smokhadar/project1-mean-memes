@@ -7,13 +7,15 @@ function loadFavorites(){
         return sadKanye;
     }
 
-    var favoritesTable = document.createElement("div");
-    favoritesTable.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
+
+    var favoritesTable = document.querySelector('#favoritesTable');
+
     
     for (var i = 0; i < favoriteQuotes.length; i++) {
-        var favoritesBody = document.createElement("div");
-        favoritesBody.classList.add('card-body');
-        favoritesBody.textContent = favoriteQuotes[i].faveQuote;
+        var favoritesBody = document.createElement("p");
+
+        favoritesBody.classList.add('card-body', 'cell', 'medium-6', 'large-4');
+        favoritesBody.textContent = '"' + favoriteQuotes[i].faveQuote + '." - Kanye West';
         favoritesTable.appendChild(favoritesBody);
 
         console.log(favoriteQuotes[i]);
@@ -22,8 +24,8 @@ function loadFavorites(){
 
         var favoritesGif = document.createElement("img");
         favoritesGif.setAttribute('src', favoriteGifs[i].faveGifs);
-        favoritesGif.setAttribute('height', "100px");
-        favoritesGif.setAttribute('width', "100px");
+        favoritesGif.setAttribute('height', "500px");
+        favoritesGif.setAttribute('width', "500px");
         favoritesTable.append(favoritesGif);
     }
     document.body.append(favoritesTable);

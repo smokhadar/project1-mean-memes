@@ -11,43 +11,38 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="top-bar" style="background-color: #f58b57;">
-          <div class="top-bar-left"style="background-color: #f58b57;">
-            <ul class="menu"style="background-color: #f58b57;">
-              <li class="menu-text" style="font-size: 40px ;">TOXIC KANYE GENERATOR</li>
-            </ul>
-          </div>
-          <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
-              <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
-              <li id="home"><a href="index.html" style="font-weight: bold;">HOME</a></li>
-              <li id="favBtn"><a href="favorites.html" style="font-weight: bold;">FAVORITES</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
+   <header class="header">
+  <div class="top-bar" style="background-color: #f58b57;">
+    <div class="top-bar-left"style="background-color: #f58b57;">
+      <ul class="menu"style="background-color: #f58b57;">
+        <li class="menu-text" style="font-size: 40px ;"> KANYE GENERATOR</li>
+      </ul>
+    </div>
+    <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
+        <ul style="gap:30px; list-style-type: none; display: flex; background-color: #f58b57;">
+        <li><a href="favorites.html" style="font-weight: bold;">FAVORITES</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-      
-<div>
-  <div class="card cell medium-1 large-2 small-1" id="dropdownbox" style="float: left; margin-left: 100px; margin-top: 200px;">	
-    <div class="grid-x">	
-       <p style="font-size: 30px; line-height: 30px; padding-bottom: 20px;font-weight: bold;" >ENTER A KEYWORD TO GENERATE A KANYE GIF AND RANDOM QUOTE:</p>	
-       <form style="width: 500px; padding-left: 70px;" id="search-form">
+  <div id="dropdownbox" >
+       <p style="font-size: 15px; line-height: 5px; font-weight: bold;">ENTER KEYWORD</p>	
+       <form id="search-form">
               <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">	
-              <div class="genButt" style="text-align: center; padding-top: 50px;">
-              <button id="genBtn">GENERATE</button>	
-              </div>
         </form>	
     </div>	
-  </div>	
-</div>
-
-   <div id="projectContent" class="card medium-1 large-2 small-1 cell" style="float: right; margin-right: 100px;"> 
+    <div class="genButt" style="text-align: center">
+      <button id="genBtn">GENERATE</button>	
+      </div>
+<!-- 
+   <div id="projectContent" class="card medium-1 large-2 small-1 cell" style="float: right; margin-right: 100px;">  -->
   
     <div id="gifAndQuote" style= "text-align: center; align-content: center; font-weight: bold; font-size: 30px;">
-        <P>RANDOM KANYE QUOTE:</P>
+        <P>Random quote:</P>
         <p style="font-size: 25px; line-height: 30px;" id="generatedQuote"></p>
-        <P>GIF RESULTS FOR: <span id="result-text"></span></P>
+        <p> - Kanye West</p>
+        <P>Gif results for: <span id="result-text"></span></P>
         <p style="display: block; width: 350px; margin: auto; " id="result-content"></p>
       <div style="text-align: center; margin-top: 35px;">
   

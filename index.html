@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-   
-
+    <style>
+      body {
+       background-image: url("https://giphy.com/gifs/morphin-kanye-kanyewest-eddies-murphy-iH7tR8Lp90sJunFjo2");
+      }
+   </style>
+  
 <header class="header">
   <div class="top-bar" style="background-color: #f58b57;">
     <div class="top-bar-left"style="background-color: #f58b57;">
       <ul class="menu"style="background-color: #f58b57;">
-        <li class="menu-text" style="font-size: 40px ;">TOXIC KANYE MEME GENERATOR</li>
+        <li class="menu-text" style="font-size: 40px ;"> KANYE GENERATOR</li>
       </ul>
     </div>
     <div id="" class="top-bar-right" style="margin-right: 20px; margin-left: 20px; font-size: 20px; margin-top: 15px;">
@@ -27,31 +31,15 @@
   </div>
 </header>
 
-<div>
-  <div class="card" id="dropdownbox" >	
-    <div class="grid-x">	
-       <p style="font-size: 30px; line-height: 30px; padding-bottom: 20px;font-weight: bold;" >ENTER A KEYWORD TO GENERATE A KANYE GIF AND RANDOM QUOTE:</p>	
-       <form style="width: 500px; padding-left: 70px;" id="search-form">
+  <div id="dropdownbox" >
+       <p style="font-size: 15px; line-height: 5px; font-weight: bold;">ENTER</p>	
+       <form id="search-form">
               <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">	
-              <div class="genButt" style="text-align: center; padding-top: 50px;">
-              <button id="genBtn">GENERATE</button>	
-              </div>
         </form>	
     </div>	
-  </div>	
-</div>
-
-<!--container where meme will be generated
-<div class="projectBox card large-2 small-1 medium-1  " style="float: right;" id="projectContent">
- 
-    <h3></h3>
-        <p></p>
-        <img src=""/>
-        <button style="left: 50%;">ADD TO FAVORITE</button>
-</div>-->
-
-
-
+    <div class="genButt" style="text-align: center">
+      <button id="genBtn">GENERATE</button>	
+      </div>
 
     <script src="assets/JS/jquery.js"></script>
     <script src="assets/JS/what-input.js"></script>

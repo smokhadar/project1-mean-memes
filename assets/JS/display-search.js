@@ -22,8 +22,8 @@ function printResults(resultObj) {
     gifEl.classList.add('generatedGif')
     gifEl.setAttribute('src', resultObj.images.downsized.url);
     console.log( "url", resultObj.images.downsized.url);
-    gifEl.setAttribute('height', "100px");
-    gifEl.setAttribute('width', "100px");
+    gifEl.setAttribute('height', "100%");
+    gifEl.setAttribute('width', "100%");
     // gifEl.src = resultObj.url;
   
     resultBody.append(gifEl);
@@ -83,7 +83,7 @@ function yeQuoteApi(){
        return response.json();
    })
    .then(function(data){
-       yeQuote.textContent = data.quote;
+       yeQuote.textContent = '"' + data.quote + '."';
        textdatabase = JSON.parse(localStorage.getItem("text")) || [];
        textdatabase.push({text: data.quote});
        localStorage.setItem("text", JSON.stringify(textdatabase));

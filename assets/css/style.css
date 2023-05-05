@@ -1,6 +1,7 @@
 
 body{
-    background-color: #e6dfcc;
+    background-color: black;
+
 }
 a{
     color: inherit;
@@ -9,77 +10,77 @@ a:hover{
     color:#7acec2
 }
 
-
-/* styling for gif container*/
-
-
-
-
-#projectContent {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;*/
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    width: 700px;
-    border: 3px solid #412517;
-    border-radius: 25px;
-    background-color: #a75f3b;
-    cursor: pointer;
-    margin: auto;
-  margin-top: 80px;
-}
-
-
-
-
 #dropdownbox{
- 
- text-align: center;
- align-content: center;
   border: 3px solid #412517;  
   border-radius: 15px;
-
-  width: 700px;
-  height: 500px;
-  padding-left: 30px;
-  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
   padding-right: 30px;
-  background-color: #a75f3b;
-  margin: auto;
-  margin-top: 80px;
+  background-color: black;
+  color: white;
+  margin: 10px 10px 10px 10px;
+  margin-right: 10px;
  }
 
+ #dropdownBox p, form {
+    margin: auto;
+ }
 
+.genButt button {
+    height: 100px;
+    width: 200px;
+      background: #f58b57;
+      border: 2px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5;
+      cursor: pointer;
+     font-size: 30px;
+     text-align: center;
+     font-weight: bold;
+  }
+  
+  .genButt button:hover{
+    color: black;
+    background: #7acec2;
+  }
+  
+#gifAndQuote {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    border: 3px solid #412517;
+    border-radius: 25px;
+    background-color: black;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
 
-
-
-
-#projectContent h2 {
+#gifAndQuote h2 {
     padding:50px 0 0 10px;
     font-size: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;  
 }
-#projectContent p {
+
+#gifAndQuote p {
     font-family: Arial, Helvetica, sans-serif;
-    color: #0e0e0d;
+    color: white;
+    margin: auto;
 }
 
-
-
-
-
-.projectBox p {
+#gifAndQuote p {
     text-align: center;
     width: 80%;
    
     font-size: 30px;
 }
 
-
-#projectContent button {
+#gifAndQuote button {
 padding-bottom: 0%;
     bottom: 0;
     height: 100px;
@@ -95,32 +96,15 @@ padding-bottom: 0%;
    
 }
 
-
-#projectContent button:hover {
+#gifAndQuote button:hover {
     color: black;
     background: #7acec2;
 }
 
-
-.genButt button {
-  height: 100px;
-  width: 200px;
-    background: #f58b57;
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    transition: 0.5;
-    cursor: pointer;
-   font-size: 30px;
-   text-align: center;
-   font-weight: bold;
+#favoritesTable {
+    background-color: black;
 }
-
-
-
-
-.genButt button:hover{
-  color: black;
-  background: #7acec2;
+#favoritesTable p, img {
+    margin: auto;
+    color: white;
 }
-
