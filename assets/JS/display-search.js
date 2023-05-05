@@ -32,7 +32,7 @@ function printResults(resultObj) {
 
 //   search gif API
 function searchGifApi(query) {
-    var gifQueryUrl = "http://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,kanyewest"
+    var gifQueryUrl = "https://api.giphy.com/v1/gifs/search?api_key=OfyI3KoCiM3YTdXVxfbOmwVxvhX0NUt5&q=kanye,kanyewest"
 
     gifQueryUrl = gifQueryUrl + query;
     console.log("gifQueryUrl", gifQueryUrl);
