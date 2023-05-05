@@ -112,6 +112,7 @@ padding-bottom: 0%;
     cursor: pointer;
     margin: auto;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 #favoritesTable p, img {
